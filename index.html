@@ -1,160 +1,269 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Portfolio</title>
-        <script src="index.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="your-javascript-file.js"></script> -->
 
     <div class="hamburger-menu">
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-<div class="navbar">
-    <a href="#Contact">CONTACT</a>
-    <a class="resume" href="resume.html" target="_blank">RESUME</a>
-    <a href="#Work">WORK</a>
-    <a href="#Home">HOME</a>
-</div>
-
-<div class="header" id="home">
-    <h1><span class="name">PRAMOD <br>PULICHERLA</span><br><br> <br><span class="Description"><span class="hi">Hi there 👋</span><br> i'm a UI/UX Designer, I Design Web and Mobile Applications, Digital products, I'm here to turn your dreams into focused and clear products.</span></h1>
-
-   
-</div>
-
-
-    
-<div class="portfolio-item">
-        <h2 class="work">WORKS</h2>
-        
-        <div class="button-rectangle-container">
-                <div class="buttons-container">
-                        <button class="buttons" id="button1">Amazon Redesign</button>
-                        <button class="buttons" id="button2" >Digital Schooling design</button>
-                        <button class="buttons" id="button3" >Portfolio Design</button>
-                </div>
-                <div class="swiper-container rectangle-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide rectangle1">
-                                <img class="img1" src="ss1.png" id="img1">
-                        </div>
-                        <div class="swiper-slide rectangle2">
-                                <img class="img2" src="ss1.png" id="img2">
-                        </div>
-                        <div class="swiper-slide rectangle3">
-                                <img  class="img3" src="ss1.png" id="img3">
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="rectangle-container">
-                    <div class="rectangle1">
-                        <img class="img1" src="ss1.png" id="img1">
-                    </div>
-                    <div class="rectangle2">
-                        <img class="img2" src="ss1.png" style="display: none;" id="img2">
-                    </div>
-                    <div class="rectangle3">
-                        <img  class="img3" src="ss1.png" style="display: none;" id="img3">
-                    </div>
-                </div> -->
-
-                
-                
-
-        </div>
-
-</div>
-
-    <!-- Add more portfolio items as needed -->
-    <div class="footer" id="home">
-        <h1 class="desc-footer">Hey there, I'm Pramod, a UI/UX Designer with a passion for creating seamless and delightful user experiences. I especially enjoy working on design operations and systems that help bring order to complexity.
-
-            When I'm not designing, you can find me enjoying music or playing video games. Thanks for stopping by my portfolio!</h1>
-        <h1 class="hitme">Do I have your Attention? <br> hit me up :)</h1>
-
-        <!-- Social media icons -->
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/pramod-pulicherla-0113b916a/" target="_blank">
-                <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:your-email@example.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-            <a href="https://wa.me/yourphonenumber" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-            <a href="https://www.instagram.com/your-instagram-profile/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="tel:yourphonenumber">
-                <i class="fas fa-phone"></i>
-            </a>
-        </div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="navbar">
+      <a href="#Contact">CONTACT</a>
+      <a class="resume" href="resume.html" target="_blank">RESUME</a>
+      <a href="#Work">WORK</a>
+      <a href="#Home">HOME</a>
     </div>
 
+    <div class="header" id="home">
+        <div class = "container">
+            <h1>Hi 👋, my name is</h1>
+            <h1>PRAMOD.</h1>
+          </div>
+      <h1>
+        <br /><span class="Description"
+          >
+          I'm a UI/UX Designer, I Design Web and Mobile Applications, Digital
+          products, I'm here to turn your dreams into focused and clear
+          products.</span
+        >
+      </h1>
+    </div>
 
-<script>
-$(document).ready(function(){
-    $("#img2, #img3").hide();
+    <div class="portfolio-item">
+      <h2 class="work">WORK</h2>
 
-    $("#button1").mouseenter(function(){
-        $(".rectangle1").css("background-color", "#135D66").css("z-index", "2");
-        $("#img1").show();
-        $(".rectangle2, .rectangle3").css("z-index", "1");
+      <div class="button-rectangle-container">
+        <div class="buttons-container">
+          <button class="buttons" id="button1">Amazon Redesign</button>
+          <button class="buttons" id="button2">Digital Schooling design</button>
+          <button class="buttons" id="button3">Portfolio Design</button>
+        </div>
+        <!-- <section class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="card">
+                            <img class="img1" src="ss1.png" id="img1">
+                        </div>
+                        <div class="swiper-slide rectangle2">
+                            <img class="img2" src="ss1.png" id="img2">
+                        </div>
+                        <div class="swiper-slide rectangle3">
+                            <img class="img3" src="ss1.png" id="img3">
+                        </div>
+                    </div>
+                </section> -->
+        <!-- <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide rectangle1">
+                            <img class="img1" src="ss1.png" id="img1">
+                        </div>
+                        <div class="swiper-slide rectangle2">
+                            <img class="img2" src="ss1.png" id="img2">
+                        </div>
+                        <div class="swiper-slide rectangle3">
+                            <img class="img3" src="ss1.png" id="img3">
+                        </div>
+                    </div>
+                </div> -->
+        <div class="rectangle-container">
+          <div class="rectangle1">
+            <img class="img1" src="ss1.png" id="img1" />
+          </div>
+          <div class="rectangle2">
+            <img class="img2" src="ss1.png" style="display: none" id="img2" />
+          </div>
+          <div class="rectangle3">
+            <img class="img3" src="ss1.png" style="display: none" id="img3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more portfolio items as needed -->
+    <div class="work1-container">
+        <h1 class="work1-text">WORK-1</h1>
+        <h1 class="work1-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on pu</h1>
+        <img class="work1-img1" src="ss1.png" id="image1" />
+        <img class="work1-img2" src="ss1.png" id="image2" />
+        <button class="transparent-button1">SEE MORE &#x25B6; &#x25B6;</button>
+        
+    </div>
+     <div class="work2-container">
+      <h1 class="work2-text">WORK-2</h1>
+      <h1 class="work2-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on pu</h1>
+      <img class="work2-img1" src="ss1.png" id="image3" />
+      <img class="work2-img2" src="ss1.png" id="image4" />
+      <button class="transparent-button2">SEE MORE &#x25B6; &#x25B6;</button>
+    
+    </div>
+    <div class="work3">
+    </div>
+    <div class="footer" id="home">
+      <h1 class="desc-footer">
+        Hey there, I'm Pramod, a UI/UX Designer with a passion for creating
+        seamless and delightful user experiences. I especially enjoy working on
+        design operations and systems that help bring order to complexity. When
+        I'm not designing, you can find me enjoying music or playing video
+        games. Thanks for stopping by my portfolio!
+      </h1>
+      <h1 class="hitme">
+        Do I have your Attention? <br />
+        hit me up :)
+      </h1>
+
+      <!-- Social media icons -->
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/pramod-pulicherla-0113b916a/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your-email@example.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://wa.me/yourphonenumber" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/your-instagram-profile/"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="tel:yourphonenumber">
+          <i class="fas fa-phone"></i>
+        </a>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
         $("#img2, #img3").hide();
-    });
 
-    $("#button2").mouseenter(function(){
-        $(".rectangle2").css("background-color", "#FFBC2C").css("z-index", "2");
-        $("#img2").show();
-        $(".rectangle1, .rectangle3").css("z-index", "1");
-        $("#img1, #img3").hide();
-    });
+        $("#button1").mouseenter(function () {
+          $(".rectangle1")
+            .css("background-color", "#135D66")
+            .css("z-index", "2");
+          $("#img1").show();
+          $(".rectangle2, .rectangle3").css("z-index", "1");
+          $("#img2, #img3").hide();
+        });
 
-    $("#button3").mouseenter(function(){
-        $(".rectangle3").css("background-color", "#1A4D2E").css("z-index", "2");
-        $("#img3").show();
-        $(".rectangle1, .rectangle2").css("z-index", "1");
-        $("#img1, #img2").hide();
+        $("#button2").mouseenter(function () {
+          $(".rectangle2")
+            .css("background-color", "#FFBC2C")
+            .css("z-index", "2");
+          $("#img2").show();
+          $(".rectangle1, .rectangle3").css("z-index", "1");
+          $("#img1, #img3").hide();
+        });
+
+        $("#button3").mouseenter(function () {
+          $(".rectangle3")
+            .css("background-color", "#1A4D2E")
+            .css("z-index", "2");
+          $("#img3").show();
+          $(".rectangle1, .rectangle2").css("z-index", "1");
+          $("#img1, #img2").hide();
+        });
+        $(".navbar a[href='#Home']").click(function (e) {
+          e.preventDefault(); // prevent the default action
+          $("html, body").animate(
+            {
+              scrollTop: $("#home").offset().top, // scroll to the top of the "#home" element
+            },
+            1000
+          ); // the duration of the scroll animation in milliseconds
+        });
+        $(".navbar a[href='#Work']").click(function (e) {
+          e.preventDefault(); // prevent the default action
+          $("html, body").animate(
+            {
+              scrollTop: $(".rectangle-container").offset().top, // scroll to the top of the ".portfolio-item" element
+            },
+            1000
+          ); // the duration of the scroll animation in milliseconds
+        });
+        $(".navbar a[href='#Contact']").click(function (e) {
+          e.preventDefault(); // prevent the default action
+          $("html, body").animate(
+            {
+              scrollTop: $(".footer").offset().top, // scroll to the top of the ".portfolio-item" element
+            },
+            1000
+          ); // the duration of the scroll animation in milliseconds
+        });
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const navbar = document.querySelector(".navbar");
+
+        hamburgerMenu.addEventListener("click", () => {
+          navbar.style.display =
+            navbar.style.display === "none" ? "flex" : "none";
+        });
+      });
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+        $('.work1-desc').css({
+            'transform': 'translateY(' + (-scroll/2) + 'px)'
+        });
+        $('.work1-text').css({
+            'transform': 'translateX(' + (scroll/4) + 'px)'
+        });
+        $('.transparent-button1').css({
+            'transform': 'translatex(' + (-scroll/2) + 'px)'
+        });
+        $('.work2-desc').css({
+            'transform': 'translateY(' + (-scroll/2) + 'px)'
+        });
+        $('.work2-text').css({
+            'transform': 'translateX(' + (scroll/4) + 'px)'
+        });
+        $('.transparent-button2').css({
+            'transform': 'translatex(' + (-scroll/2) + 'px)'
+        });
+       
+        $(window).scroll(function() {
+          var scroll = $(window).scrollTop();
+        
+          $('.work1-img1').css({
+            'transform': 'translateX(' + (-scroll / 2) + 'px) rotateX(15deg) rotateY(50deg) rotateZ(15deg)',
+            'transform-style': 'preserve-3d'
+          });
+          $('.work1-img2').css({
+            'transform': 'translateY(' + (-scroll / 1) + 'px) rotateX(25deg) rotateY(50deg) rotateZ(10deg)',
+            'transform-style': 'preserve-3d'
+          });
+          $('.work2-img1').css({
+            'transform': 'translateY(' + (-scroll / 2) + 'px) rotateX(15deg) rotateY(50deg) rotateZ(15deg)',
+            'transform-style': 'preserve-3d'
+          });
+          $('.work2-img2').css({
+            'transform': 'translatex(' + (scroll / 4) + 'px) rotateX(25deg) rotateY(50deg) rotateZ(10deg)',
+            'transform-style': 'preserve-3d'
+          });
+        });
+       
     });
-    $(".navbar a[href='#Home']").click(function(e) {
-        e.preventDefault(); // prevent the default action
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top // scroll to the top of the "#home" element
-        }, 1000); // the duration of the scroll animation in milliseconds
-    });
-    $(".navbar a[href='#Work']").click(function(e) {
-        e.preventDefault(); // prevent the default action
-        $('html, body').animate({
-            scrollTop: $(".rectangle-container").offset().top // scroll to the top of the ".portfolio-item" element
-        }, 1000); // the duration of the scroll animation in milliseconds
-    });
-    $(".navbar a[href='#Contact']").click(function(e) {
-        e.preventDefault(); // prevent the default action
-        $('html, body').animate({
-            scrollTop: $(".footer").offset().top // scroll to the top of the ".portfolio-item" element
-        }, 1000); // the duration of the scroll animation in milliseconds
-    });
-    const hamburgerMenu = document.querySelector('.hamburger-menu');
-    const navbar = document.querySelector('.navbar');
     
-    hamburgerMenu.addEventListener('click', () => {
-        navbar.style.display = navbar.style.display === 'none' ? 'flex' : 'none';
-    });
-    window.onload = function() {
-        var swiper = new Swiper('.swiper-container');
-    }
-    
-});
-
-</script>
-</body>
+      
+    </script>
+  </body>
 </html>
