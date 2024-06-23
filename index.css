@@ -35,7 +35,7 @@ body {
     margin-right: auto;
     text-align: center;
     margin-top: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
   }
   
   .container h1:nth-child(1) {
@@ -160,7 +160,7 @@ body {
     font-weight:bolder;
     
     position: absolute; /* Absolute positioning */
-    bottom: 8px; /* At the bottom */
+    bottom: 5px; /* At the bottom */
     left: 8px; /* At the left */
     padding: 10px; /* Adjust padding as needed */
     /* Add more styling here as needed (e.g., background-color, border) */
