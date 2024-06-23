@@ -11,7 +11,22 @@ body {
     100% { background-position: 0% 50%; }
 }
 /* NOTE: I only tested this on Google Chrome.*/
+.l-shape {
+    position: relative;
+    width: 1000px; /* Width of the main part */
+    height: 200px; /* Height of the main part */
+    background-color: blue;
+}
 
+.l-shape::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px; /* Width of the extended part */
+    height: 100px; /* Height of the extended part, making it L-shaped */
+    background-color: blue;
+}
 
   
   .container{
@@ -19,7 +34,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
   }
   
   .container h1:nth-child(1) {
@@ -176,14 +192,14 @@ body {
     font-size : 40px;
 }
 .Description{
-    padding-left:200px;
+    padding-left: 200px;
     color: #355c7d;
     font-family: 'Fira Code', monospace;
     font-weight: 600;
     font-size: 20px;
-
+    position: relative; /* Add this line if not already positioned */
+    top: -60px; /* Adjust this value as needed to move upwards */
 }
-
 
 .buttons {
     /* background-color: #1abc9c; */
