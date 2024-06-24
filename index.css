@@ -140,7 +140,7 @@ body {
     border-radius: 32px;
     border: none;
 
-    padding: 110px;
+    padding: 100px;
     padding-right: 700px;
     font-family: palatino linotype,serif;
     text-align: left        ;
@@ -160,7 +160,7 @@ body {
     font-weight:bolder;
     
     position: absolute; /* Absolute positioning */
-    bottom: 10px; /* At the bottom */
+    bottom: 0-px; /* At the bottom */-+
     left: 8px; /* At the left */
     padding: 10px; /* Adjust padding as needed */
     /* Add more styling here as needed (e.g., background-color, border) */
