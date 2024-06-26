@@ -15,6 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -33,7 +34,7 @@
     </div>
 
     <div class="header" id="home">
-        <div class = "container">
+        <div class = "bio">
           <h1>Hi 👋, my name is</h1>
            <h1>PRAMOD.</h1>
         </div>
@@ -106,8 +107,9 @@
         <h1 class="work1-desc">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on pu</h1>
         <img class="work1-img1" src="ss1.png" id="image1" />
         <img class="work1-img2" src="ss1.png" id="image2" />
-        <button class="transparent-button1">SEE MORE &#x25B6; &#x25B6;</button>
-        
+        <a href="/work1.html" target="_blank">
+          <button class="transparent-button1">SEE MORE &#x25B6; &#x25B6;</button>
+        </a>        
     </div>
      <div class="work2-container">
       <h1 class="work2-text">WORK-2</h1>
@@ -290,8 +292,35 @@
         });
        
     });
+    document.addEventListener("DOMContentLoaded", function() {
+      window.addEventListener('scroll', function() {
+        const containers = document.querySelectorAll('.work2-container, .work3-container');
+        const links = document.querySelectorAll('.navbar a'); // Selects all <a> elements
     
-      
+        // Function to check if any part of the containers is in the viewport
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top < window.innerHeight && rect.bottom >= 0
+          );
+        }
+    
+        // Initialize a variable to track if any container is in view
+        let anyContainerInView = false;
+    
+        // Check each container and update anyContainerInView if any is in the viewport
+        containers.forEach(container => {
+          if (isInViewport(container)) {
+            anyContainerInView = true;
+          }
+        });
+    
+        // Change link colors based on anyContainerInView
+        links.forEach(link => {
+          link.style.color = anyContainerInView ? 'white' : 'black'; // Change to white if any container is in view, else revert to black
+        });
+      });
+    });      
     </script>
   </body>
 </html>
