@@ -1,0 +1,146 @@
+body, html {
+    
+   
+}
+
+body {
+    background-color: black;
+    border-radius: 100px;
+    width: 91%;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+}
+.title{
+    font-size: 48px;
+    line-height: 1.0834933333;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    text-transform: uppercase; /* This line will make all text uppercase */
+
+}
+.desc1{
+    font-size: 20px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    position: relative;
+   margin: 100px auto 0 100px;
+    padding-right: 800px;
+    color: white;
+
+}
+.desc2{
+    font-size: 20px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    position: relative;
+   margin: 100px 100px 0 auto;
+    padding-left: 800px;
+    color: white;
+
+}
+.desc3{
+    font-size: 20px;
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    position: relative;
+   margin: 100px auto 0 100px;
+    padding-right: 800px;
+    color: white;
+
+}
+table {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse;
+    width: 85%;
+    color: white;
+
+}
+td, th {
+    border: solid;
+    padding: 8px;
+}
+
+.lists-container {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: space-around; /* This will space out the lists evenly */
+}
+
+.list-1, .list-2 {
+    flex: 1; /* This makes each list take up equal space */
+    color: white;
+    font-size: 20px;
+    
+   
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+.list-title{
+    font-size: 36px;
+    line-height: 1.0834933333;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    margin: 100px;
+    display: flex;
+    color: white;
+    text-transform: uppercase; /* This line will make all text uppercase */
+}
+.objective-title{
+    font-size: 36px;
+    line-height: 1.0834933333;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+    margin: 100px;
+    display: flex;
+    color: white;
+    text-transform: uppercase; /* This line will make all text uppercase */
+}
+.list-3 {
+    flex: 1; /* This makes each list take up equal space */
+    color: white;
+    font-size: 20px;
+    
+   
+    line-height: 1.4705882353;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
+}
+li {
+    margin-bottom: 10px; /* Adjust the value to increase or decrease the gap */
+}
+.lists-container2 {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: space-around; /* This will space out the lists evenly */
+}
